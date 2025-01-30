@@ -1,9 +1,10 @@
 const pgp = require('pg-promise')();
 
+//ngrok tcp 5432
 // Database connection details
 const db = pgp({
-    host: 'localhost',
-    port: 5432,
+    host: '0.tcp.sa.ngrok.io',
+    port: 11655,
     database: 'mydatabase',
     user: 'myuser',
     password: 'mypassword'
